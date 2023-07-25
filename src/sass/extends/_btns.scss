@@ -1,0 +1,8 @@
+.btn-primary {
+  font-size: map-get($font-sizes, l);
+  font-weight: map-get($font-weights, medium);
+  background-color: map-get($colors, primary);
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  border-radius: 10rem;
+}
