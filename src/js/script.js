@@ -1,5 +1,17 @@
 "use strict";
 
+const loader = document.getElementById("loader");
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+  await sleep(200);
+  loader.style.opacity = 0;
+  loader.style.zIndex = -5;
+});
+
 const languageBtn = document.getElementById("languageBtn");
 const textElements = document.getElementsByClassName("text");
 const starImage = document.getElementById("starImage");
