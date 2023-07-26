@@ -1,12 +1,12 @@
 .footer {
   width: 100%;
-  height: 25rem;
+  height: 10rem;
   background-image: url(/assets/footer.svg);
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding-block: 1rem;
   padding-inline: 2rem;

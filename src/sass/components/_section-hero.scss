@@ -7,17 +7,7 @@
   flex-direction: column;
   gap: 4rem;
   padding-block: 20rem;
-  background-color: rgba(map-get($colors, background), 0.8);
-
-  &--title {
-    .brand {
-      font-size: 7rem;
-    }
-
-    .text {
-      font-weight: map-get($font-weights, medium);
-    }
-  }
+  background-color: rgba(map-get($colors, background), 0.6);
 
   &--bg {
     position: absolute;

@@ -1,15 +1,15 @@
 .section-topics {
-  padding-block: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
+  padding-block-end: 4rem;
   text-align: center;
   &__content {
     height: max-content;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-inline: 5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-inline: 1rem;
     place-items: center;
   }
 }
@@ -18,7 +18,7 @@
   position: relative;
   perspective: 150rem;
   height: 50rem;
-  width: 30rem;
+  width: 19vw;
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
@@ -29,7 +29,7 @@
     border-radius: 1rem;
     position: absolute;
     backface-visibility: hidden;
-    width: 30rem;
+    width: 19vw;
     height: 50rem;
     top: 0;
     left: 0;
