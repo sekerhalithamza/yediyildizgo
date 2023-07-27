@@ -23,6 +23,8 @@ languageBtn.addEventListener("click", () => {
     element.innerText = element.getAttribute("data-language");
     element.setAttribute("data-language", oldText);
   }
+  if (document.documentElement.lang === "en") document.documentElement.lang = "tr";
+  else document.documentElement.lang = "en";
 });
 
 const starImageAnimation = setInterval(() => {
