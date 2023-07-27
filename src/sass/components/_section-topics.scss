@@ -37,12 +37,50 @@
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
 
     &--front {
-      background-color: map-get($colors, secondary);
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       gap: 5rem;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.real-estate {
+        background-image: linear-gradient(
+            rgba(map-get($colors, secondary), 0.6),
+            rgba(map-get($colors, secondary), 0.6)
+          ),
+          url(/assets/real-estate.webp);
+      }
+
+      &.construction {
+        background-color: map-get($colors, secondary);
+      }
+
+      &.media {
+        background-image: linear-gradient(
+            rgba(map-get($colors, secondary), 0.6),
+            rgba(map-get($colors, secondary), 0.6)
+          ),
+          url(/assets/media.webp);
+      }
+
+      &.consulting {
+        background-image: linear-gradient(
+            rgba(map-get($colors, secondary), 0.6),
+            rgba(map-get($colors, secondary), 0.6)
+          ),
+          url(/assets/consulting.webp);
+      }
+
+      &.organization {
+        background-image: linear-gradient(
+            rgba(map-get($colors, secondary), 0.6),
+            rgba(map-get($colors, secondary), 0.6)
+          ),
+          url(/assets/organization.webp);
+      }
 
       &--title {
         font-size: map-get($font-sizes, xxl);
