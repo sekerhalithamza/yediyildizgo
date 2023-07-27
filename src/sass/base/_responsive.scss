@@ -1,0 +1,60 @@
+@media (max-width: 1440px) {
+  html {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 43.75%; // 1rem = 7px
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 37.5%; // 1rem = 6px
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .section-hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-about {
+    padding-inline: 2rem;
+    gap: 2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      &--text {
+        font-size: map-get($font-sizes, m);
+        text-align: center;
+      }
+    }
+  }
+
+  .section-topics__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  .card {
+    width: 50vw;
+
+    &__side {
+      width: 50vw;
+    }
+  }
+}

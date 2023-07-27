@@ -55,7 +55,11 @@
       }
 
       &.construction {
-        background-color: map-get($colors, secondary);
+        background-image: linear-gradient(
+            rgba(map-get($colors, secondary), 0.6),
+            rgba(map-get($colors, secondary), 0.6)
+          ),
+          url(/assets/construction.webp);
       }
 
       &.media {
